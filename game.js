@@ -20,6 +20,7 @@ function bindEventListeners (dots) {
 function makeGreen (evt) {
   evt.preventDefault()
   evt.target.classList.toggle('green')
+  totals.green++;
   updateCounts()
 }
 
@@ -43,8 +44,60 @@ function updateCounts () {
     green: 0,
     invisible: 0
   }
+
   
   // WRITE CODE HERE TO COUNT BLUE, GREEN, AND INVISIBLE DOTS
+
+  var allDots = document.getElementsByClassName('board')[0].children;
+
+
+
+
+
+
+
+
+
+    // bindEventListeners(document.getElementsByClassName('board')[0].children)
+    
+    // for (i = 0; i < document.getElementsByClassName('board')[0].children.length; i++) {
+
+    //   var x = document.getElementsByClassName('board')[i].classList.contains('blue');
+    //   if (x === true) {
+    //   totals.blue++;
+    //   }
+      
+    //   var y = document.getElementsByClassName('board')[i].classList.contains('green');
+    //   if (y === true) {
+    //   totals.green++;
+    //   }
+      
+    //   var z = document.getElementsByClassName('board')[i].classList.contains('invisible');
+    //   if (z === true) {
+    //   totals.invisible++;
+    //   }
+    //   }
+  
+
+
+    // for (i = 0; i < document.getElementsByClassName('board')[0].children.length; i++) {
+
+      // var x = document.getElementsByClassName('board')[i].classList.contains('blue');
+      // if (x === true) {
+      // totals.blue++;
+      // }
+      
+      // var y = document.getElementsByClassName('board')[i].classList.contains('green');
+      // if (y === true) {
+      // totals.green++;
+      // }
+      
+      // var z = document.getElementsByClassName('board')[i].classList.contains('invisible');
+      // if (z === true) {
+      // totals.invisible++;
+      // }
+      // }
+  
 
   // Once you've done the counting, this function will update the display
   displayTotals(totals)
