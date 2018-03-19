@@ -50,6 +50,18 @@ function updateCounts () {
 
   var allDots = document.getElementsByClassName('board')[0].children;
 
+  for (allDots[i] = 0; i < allDots.length; i++) {
+    if (allDots[i].classList.contains("blue")) {
+      totals.blue++;
+    }
+    else if (allDots[i].classList.contains("green")) {
+      totals.green++;
+    }
+    else if (allDots[i].classList.contains("invisible")) {
+      totals.invisible++;
+    }
+  }
+
 
 
 
