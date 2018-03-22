@@ -47,17 +47,17 @@ function updateCounts () {
   
   // WRITE CODE HERE TO COUNT BLUE, GREEN, AND INVISIBLE DOTS
 
-  var allDots = document.getElementsByClassName('board')[0].children
+  var dots = document.getElementsByClassName('board')[0].children
   bindEventListeners(dots)
 
-  for (var i = 0; i < allDots.length; i++) {
-    if (allDots[i].classList.contains('blue')) {
+  for (var i = 0; i < dots.length; i++) {
+    if (dots[i].classList.contains('blue')) {
       totals.blue++;
     }
-    if (allDots[i].classList.contains('green')) {
+    if (dots[i].classList.contains('green')) {
       totals.green++;
     }
-    if (allDots[i].classList.contains('invisible')) {
+    if (dots[i].classList.contains('invisible')) {
       totals.invisible++;
     }
   }
