@@ -68,5 +68,5 @@ function updateCounts () {
   }
 
   displayTotals(totals)
-
+}
 
