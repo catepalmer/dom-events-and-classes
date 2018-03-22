@@ -61,7 +61,7 @@ function updateCounts () {
       totals.invisible++;
     }
   }
-  function displayTotal (totals) {
+  function displayTotals (totals) {
     for (var key in totals) {
       document.getElementById(key + '-total').innerHTML = totals[key]
     }
