@@ -51,13 +51,13 @@ function updateCounts () {
   bindEventListeners(dots)
 
   for (var i = 0; i < allDots.length; i++) {
-    if (allDots[i].classList.contains("blue")) {
+    if (allDots[i].classList.contains('blue')) {
       totals.blue++;
     }
-    if (allDots[i].classList.contains("green")) {
+    if (allDots[i].classList.contains('green')) {
       totals.green++;
     }
-    if (allDots[i].classList.contains("invisible")) {
+    if (allDots[i].classList.contains('invisible')) {
       totals.invisible++;
     }
   }
