@@ -61,11 +61,12 @@ function updateCounts () {
       totals.invisible++;
     }
   }
-  displayTotals(totals)
-}
-
-function displayTotal (totals) {
-  for (var key in totals) {
-    document.getElementById(key + '-total').innerHTML = totals[key]
+  function displayTotal (totals) {
+    for (var key in totals) {
+      document.getElementById(key + '-total').innerHTML = totals[key]
+    }
   }
-}
+
+  displayTotals(totals)
+
+
